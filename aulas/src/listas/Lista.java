@@ -13,7 +13,7 @@ public class Lista {
 	}
 
 	public boolean estaVazia() {
-		return this.tail == null;
+		return this.cauda == null;
 	}
 	
 	public NoLista getCabeca(){
@@ -54,7 +54,7 @@ public class Lista {
                 this.setCabeca(no);
                 no.setNext(current);
             }else if(posicao == this.getQuantidade()){
-                for(; current.getNext() != this.tail;){
+                for(; current.getNext() != this.cauda;){
                     current = current.getNext();
                 }
                 no.setNext(current.getNext());
